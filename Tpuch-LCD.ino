@@ -142,7 +142,7 @@ void setup() {
 
   touchscreenSPI.begin(XPT2046_CLK, XPT2046_MISO, XPT2046_MOSI, XPT2046_CS);
   touchscreen.begin(touchscreenSPI);
-  touchscreen.setRotation(2);  // 터치스크린 회전 설정
+  touchscreen.setRotation(0);  // 터치스크린 회전 설정
 
   lv_disp_t * disp;
   disp = lv_tft_espi_create(SCREEN_WIDTH, SCREEN_HEIGHT, draw_buf, sizeof(draw_buf));  // 디스플레이 초기화
