@@ -3,11 +3,11 @@
 #include <XPT2046_Touchscreen.h>
 
 // 터치스크린 핀 설정
-#define XPT2046_IRQ 18   // 터치 인터럽트 핀
-#define XPT2046_MOSI 6   // SPI MOSI 핀
-#define XPT2046_MISO 1   // SPI MISO 핀
-#define XPT2046_CLK 36   // SPI 클럭 핀
-#define XPT2046_CS 4     // SPI 칩 선택 핀
+#define XPT2046_IRQ  18   // 터치 인터럽트 핀
+#define XPT2046_MOSI 11   // SPI MOSI 핀
+#define XPT2046_MISO 13   // SPI MISO 핀
+#define XPT2046_CLK  12   // SPI 클럭 핀
+#define XPT2046_CS   39   // SPI 칩 선택 핀
 
 // SPI 통신 초기화
 SPIClass touchscreenSPI = SPIClass(VSPI);
