@@ -7,7 +7,7 @@
 #define XPT2046_MOSI 11   // SPI MOSI 핀
 #define XPT2046_MISO 13   // SPI MISO 핀
 #define XPT2046_CLK  12   // SPI 클럭 핀
-#define XPT2046_CS   0   // SPI 칩 선택 핀
+#define XPT2046_CS    0  // SPI 칩 선택 핀
 
 // SPI 통신 초기화
 SPIClass touchscreenSPI = SPIClass(VSPI);
